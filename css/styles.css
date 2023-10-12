@@ -398,3 +398,20 @@ a {
 /* 省略手机版样式 */
 
 /* 网格Grid组件 */
+
+/* 手机模式 */
+.grid {
+  display: grid;
+}
+
+/* 桌面模式   默认是竖排适合手机，这里实现超过768px，应该左右分布 */
+@media screen and (min-width: 768px) {
+  .grid--1X2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid--1X3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
