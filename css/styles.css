@@ -237,6 +237,11 @@ a {
   background-color: #ec3000;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .btn--block {
   width: 100%;
   display: inline-block;
@@ -374,7 +379,6 @@ a {
 }
 
 /* 引言 Quotes */
-
 .quote {
   font-size: 3rem;
   font-style: italic;
@@ -407,7 +411,6 @@ a {
   position: relative;
   bottom: 10px;
 }
-
 /* 省略手机版样式 */
 
 /* 网格Grid组件 */
@@ -429,7 +432,7 @@ a {
   }
 }
 
-/* 图片响应式  testimonial */
+/* 推荐组件 testimonial 图片响应式 */
 .testimonial {
   padding: 3rem;
 }
@@ -458,3 +461,46 @@ a {
 .testimonial .quote {
   margin-left: 6rem;
 }
+
+/* 气泡卡片样式 callout */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1X2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+}
+
+/* 折叠组件样式 */
