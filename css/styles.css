@@ -120,7 +120,7 @@ a {
 
 .badge--small {
   font-size: 1.6rem;
-  padding:0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -161,9 +161,25 @@ a {
   }
 }
 
-/* 图标样式，待补充 */
+/* 图标icon样式 */
+.icon {
+  width: 40px;
+  height: 40px;
+}
 
+.icon--primary {
+  fill: var(--color-primary);
+}
 
+.icon-container {
+  background-color: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* 按钮样式 */
 .btn {
@@ -296,8 +312,8 @@ a {
 
 /* 组合卡片样式 */
 .plan__name {
-  color:white;
-  margin:0;
+  color: white;
+  margin: 0;
   font-weight: 500;
   font-size: 2.4rem;
 }
@@ -310,11 +326,11 @@ a {
   font-size: 2.4rem;
   font-weight: 300;
   opacity: 0.8;
-  margin-right:1rem;
+  margin-right: 1rem;
 }
 
 .plan__description {
-  font-size:2rem;
+  font-size: 2rem;
   font-weight: 200;
   letter-spacing: 1px;
   display: block;
@@ -325,3 +341,22 @@ a {
 }
 
 /* 省略手机版样式 */
+
+/* 媒体对象 */
+.media {
+  display: flex;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+/* 引言 Quotes */
