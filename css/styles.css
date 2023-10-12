@@ -534,3 +534,44 @@ a {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
 }
+
+/* 块元素样式 */
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background-color: #000;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: white;
+}
+
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+/* 全局设置最大的宽度，超过宽度不会拉伸元素 */
+/* 上下margin为0，左右margin自动适应 */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* 导航栏样式 */
