@@ -206,7 +206,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -298,6 +298,8 @@ a {
   flex-grow: 1;
   /* 技巧：让input标签撑满整个div，实现输入域的整合 */
   padding: 1.5rem 2rem;
+  /* 利用troubleshooting解决这个问题，加下面这一行 */
+  width: 0;
 }
 
 /* 在btn按钮样式的基础上，覆盖input-groud块元素内的特殊按钮样式 */
