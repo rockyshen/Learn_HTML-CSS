@@ -30,7 +30,6 @@ body {
   color: var(--color-body);
 }
 
-
 /* 全局标题样式 */
 h1,
 h2,
@@ -214,9 +213,9 @@ a {
 }
 
 .btn .icon {
-  width:2rem;
+  width: 2rem;
   height: 2rem;
-  margin-right:1rem;
+  margin-right: 1rem;
   vertical-align: middle;
 }
 
@@ -335,11 +334,19 @@ a {
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background-color: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background-color: #02cdf1;
 }
 
 /* 组合卡片样式 */
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
 .plan__name {
   color: white;
   margin: 0;
@@ -367,6 +374,17 @@ a {
 
 .plan .list__item {
   margin-bottom: 2rem;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 /* 省略手机版样式 */
@@ -628,13 +646,13 @@ a {
   border-radius: 5px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .nav__toggler {
     display: none;
   }
 
   .nav__list {
-    width:auto;
+    width: auto;
     display: flex;
     font-size: 1.6rem;
     max-height: 100%;
@@ -642,24 +660,23 @@ a {
   }
 
   .nav__item {
-    border:0;
+    border: 0;
   }
 }
-
 
 /* 横幅组件banner样式,也叫hero component */
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
   letter-spacing: 1px;
-  margin:2rem 0 5rem;
+  margin: 2rem 0 5rem;
 }
 
 .hero__image {
-  width:100%;
+  width: 100%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .hero {
     padding-top: 0;
   }
@@ -673,15 +690,15 @@ a {
 /* 域名价格区域的样式 */
 .block__domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
-  border:0;
+  border: 0;
   max-width: 670px;
-  margin:4rem auto;
+  margin: 4rem auto;
 }
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,6rem);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
@@ -689,8 +706,18 @@ a {
   margin: 0 auto;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .block-domain__prices {
-    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
+}
+
+/* 计划区块 */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
